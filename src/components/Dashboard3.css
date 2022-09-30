@@ -1,0 +1,104 @@
+:root {
+  --spacecontainer: 1rem;
+}
+/* .css-rq6rj2-MuiFormControl-root-MuiTextField-root {
+  background-color: rgb(3, 0, 0)!important;
+}
+.css-a6d5po-MuiFormControl-root-MuiTextField-root:hover {
+  background-color: red!important;
+  border-color: rgb(255, 250, 250)!important;
+} */
+
+.dashboard3__container {
+  display: flex;
+  flex-direction: column;
+}
+.part1__dashboard3 {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 5vw;
+}
+.individualAgent__container {
+  display: grid;
+  grid-template-rows: minmax(75px, 75px) minmax(125px, 125px);
+  gap: 1rem;
+}
+.anilisisIndividual__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.anilisisIndividual__container > .infoAgent {
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--D4-card-bg-title);
+}
+.dashboard3__container .graphic__container {
+  margin: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--D4-card-bg-color);
+  height: 300px;
+  width: 400px;
+}
+.dashboard3__container .graphic__container :hover {
+  cursor: pointer;
+}
+.dashboard3__container .graphic__container2 {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--D4-card-bg-color);
+}
+.individualAgent__container > .calendar__container,
+.individualAgent__container > .date__selector__container {
+  width: 230px;
+  align-self: center;
+  margin: auto;
+}
+.dashboard3__container h1 {
+  font-size: var(--D4-card-size-title);
+  font-family: Proxima Nova Ligth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.dashboard3__container strong{
+  font-weight: lighter;
+}
+
+.part2__dashboard3 {
+  height: 500px;
+  margin: 0 2rem 2rem 2rem;
+}
+.part2__dashboard3 > .anilisisMensual__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 95%;
+}
+.part2__dashboard3 > .anilisisMensual__container .infoAgent {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--D4-card-bg-title);
+}
+@media only screen and (max-width: 700px) {
+  .part1__dashboard3 {
+    font-size: calc(var(--title_selectors_font_size));
+    grid-template-rows: auto 1fr;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 700px) {
+  .part1__dashboard3 {
+    grid-template-columns: 1fr 5fr;
+  }
+}

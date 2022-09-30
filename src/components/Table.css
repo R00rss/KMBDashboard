@@ -1,0 +1,33 @@
+:root{
+  --tables_font_size: 1vw;
+}
+.table__global {
+  width: 100%;
+  font-family: Proxima Nova Ligth;
+}
+.table__global > thead > tr > th {
+  color: #000000;
+  background-color: var(--D4-card-bg-title);
+  border: solid 1px #000000;
+  border-radius: 1px;
+  height: 7vh;
+  min-width: 8vw;
+  font-weight: normal;
+  font-family: Proxima Nova Regular;
+  padding: 0 2vw;
+  font-size: 1vw;
+}
+.table__global > tbody > tr > td {
+  font-size: 1vw;
+  height: 5vh;
+  font-family: Proxima Nova Regular ;
+  background-color: var(--D4-card-bg-color);
+  border: solid 1px #000000;
+  border-radius: 1px;
+  color: rgb(255, 255, 255);
+  padding: 0 2vw;
+}
+#tdTotal{
+  background-color: var(--D4-card-bg-title);
+  color: #000000;
+}

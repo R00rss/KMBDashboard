@@ -1,0 +1,27 @@
+/*MAIN CONTAINER*/
+:root {
+  --logo_height: 12vw;
+  --xl: 1;
+  /* MENOR A 600px */
+  --l: 1.5;
+  /* entre 600px y 768px */
+  --m: 2;
+  /* entre 600px y 768px */
+  --s: 2.5;
+  /* entre 768px y 992px */
+  --xs: 3;
+  /* entre 992px y 1200px */
+}
+.login__container {
+  min-height: 100vh;
+  /* background-color: aquamarine; */
+  background-image: url(../img/Fondo_home_kmb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5vw;
+}

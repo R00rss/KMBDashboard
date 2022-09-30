@@ -1,0 +1,32 @@
+.calendar__container{
+    border-radius: 5px;
+    background-color: rgb(42, 42, 42);
+}
+.calendar__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding:1rem 2rem 0 2rem; */
+    height: 60px;
+}
+/* .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root{
+    color: white;
+} */
+.datepicker__container{
+    background-color: #292960;
+}
+.calendar__title__container{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--D4-card-bg-title);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #000000;
+}
+.calendar__title__container > label{
+    font-size: 15px;
+    font-family: Proxima Nova Ligth;
+    width: 80%;
+    /* color: var(--D4-card-color-title); */
+}

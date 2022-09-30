@@ -1,0 +1,164 @@
+
+
+@font-face {
+  font-family: Proxima Nova Regular;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Proxima Nova Semibold;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: Proxima Nova Ligth;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Alt\ Light.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Alt\ Bold.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: Proxima Nova Bold Italic;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Bold\ Italic.otf");
+}
+@font-face {
+  font-family: Proxima Nova Semibold Italic;
+  src: url("./fonts/ProximaNova/Proxima\ Nova\ Semibold\ Italic.otf")
+    format("opentype");
+}
+
+* {
+  /*font-family: Proxima Nova Ligth;*/
+}
+.nova_bold {
+  font-family: Proxima Nova Bold;
+}
+.nova_regular {
+  font-family: Proxima Nova Regular;
+}
+.nova_semibold {
+  font-family: Proxima Nova Semibold;
+}
+.nova_light {
+  font-family: Proxima Nova Ligth;
+}
+select {
+  color: var(--selects-font-colors);
+  text-align: center;
+  width: 75%;
+  font-weight: lighter;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  /* background-color: #abacad; */
+  background-color: var(--D4-card-bg-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+input{
+  color: #000000;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  background-color: #adabab;  
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+}
+input:focus,select:focus {
+  outline: none;
+}
+input::placeholder {
+  text-align: center;
+  color: rgb(119, 119, 119);
+}
+select option {
+  font-family: Proxima Nova Ligth !important;
+}
+select:hover {
+  cursor: pointer;
+}
+html{
+  height: 100vh;
+  background-color: var(--DPage-bg-color);
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: var(--D4-card-bg-title) var(--D4-card-bg-color);   /* scroll thumb and track */
+}
+html::-webkit-scrollbar{
+  background-color: var(--D4-card-bg-color);
+  border: solid 1px #000000;
+  width: 9px;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: var(--D4-card-bg-title);
+}
+
+@media only screen and (max-width: 600px) {
+  .tabla__reporte,
+  .tabla__reporte__content,
+  .table__global {
+    font-size: calc(var(--tables_font_size) * 2.5);
+  }
+  .login__container > .img__container > img {
+    height: calc(var(--logo_height) * 2.5);
+  }
+  .select__container {
+    font-size: calc(var(--tables_font_size) * 2.5);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .tabla__reporte,
+  .tabla__reporte__content,
+  .table__global {
+    font-size: calc(var(--tables_font_size) * 2);
+  }
+  .login__container > .img__container > img {
+    height: calc(var(--logo_height) * 2);
+  }
+  .select__container {
+    font-size: calc(var(--tables_font_size) * 2);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .tabla__reporte,
+  .tabla__reporte__content,
+  .table__global {
+    font-size: calc(var(--tables_font_size) * 1.5);
+  }
+  .login__container > .img__container > img {
+    height: calc(var(--logo_height) * 1.5);
+  }
+  .select__container {
+    font-size: calc(var(--tables_font_size) * 1.5);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .tabla__reporte,
+  .tabla__reporte__content,
+  .table__global {
+    font-size: calc(var(--tables_font_size) * 1);
+  }
+  .login__container > .img__container > img {
+    height: calc(var(--logo_height) * 1);
+  }
+  .select__container {
+    font-size: calc(var(--tables_font_size) * 1);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .tabla__reporte,
+  .tabla__reporte__content,
+  .table__global {
+    font-size: calc(var(--tables_font_size) * var(--xl));
+  }
+  .login__container > .img__container > img {
+    height: calc(var(--logo_height) * var(--xl));
+  }
+  .select__container {
+    font-size: calc(var(--tables_font_size) * var(--xl));
+  }
+}

@@ -1,0 +1,116 @@
+:root {
+  --title_graphs_size: 16px;
+}
+
+.dashboard__container > .row1 {
+  display: flex;
+  justify-content: center;
+}
+.dashboard__container > .row2,
+.dashboard__container > .row3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard__container > .row2 {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  width: 95%;
+}
+.linechart__container,
+.piechart__container {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2/1;
+  background-color: var(--D4-card-bg-color);
+  border:none;
+  border-radius: 5px;
+  position: relative;
+  font-family: Proxima Nova Ligth;
+  margin: 3vh 0;
+}
+.piechart__container {
+  aspect-ratio: 2/1.5;
+}
+.pie__title__container,
+.line__title__container {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  background-color: var(--D4-card-bg-title);
+  border-radius: 5px;
+  color: #000000;
+  top: -3%;
+}
+.pie__title__container{
+  width: 90%;
+}
+.btn__atras__path {
+  border: none;
+
+  border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .pie__title__container,
+  .line__title__container {
+    font-size: calc(var(--title_graphs_size) * 0.7);
+  }
+  .dashboard__container > .row2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard__container > .row2 .piechart__container {
+    width: 80%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .pie__title__container,
+  .line__title__container {
+    font-size: calc(var(--title_graphs_size) * 0.7);
+  }
+  .dashboard__container > .row2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard__container > .row2 .piechart__container {
+    width: 55%;
+    height: 270px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .pie__title__container,
+  .line__title__container {
+    font-size: calc(var(--title_graphs_size)*0.8);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .dashboard__container > .row2 {
+    flex-direction: row;
+  }
+  .dashboard__container > .row2 .piechart__container {
+    width: 30%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

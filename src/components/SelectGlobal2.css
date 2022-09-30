@@ -1,0 +1,53 @@
+.selectGlobal__container {
+  position: relative;
+  border:none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+.selectGlobal__container > .selectGlobal__head {
+  color: #000000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  background-color: var(--D4-card-bg-title);
+  font-size: 14px;
+}
+.selectGlobal__body {
+  border:none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--D4-card-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+/* .selectGlobal__body > select {
+  color: #000000;
+  text-align: center;
+  width: 55%;
+  height: 35%;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  background: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  border-radius: 9px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+} */
+/* .selectGlobal__body > select > option {
+  font-family: Proxima Nova Regular;
+}
+.selectGlobal__body > select:focus {
+  outline: none;
+} */

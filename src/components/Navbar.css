@@ -1,0 +1,220 @@
+:root {
+  --bg_color: #000000;
+  --navbar_font_color: #444444;
+  --bg: #edf2f6;
+  --bg-accent: #116a66;
+  --text-color: #000000;
+  --nav-size: 65px;
+  --border: 1px solid #002c57;
+  --border-radius: 8px;
+  --speed: 500ms;
+  --bg-icon-btn: #f8fefb;
+}
+.navbar___container {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 0.5rem 0;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg_color);
+}
+.btns__container {
+  display: flex;
+  justify-content: right;
+  background-color: var(--bg_color);
+}
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_color);
+}
+.logo__container > img {
+  width: 82px;
+  background-color: var(--bg_color);
+}
+.btn__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__container > .btn__navbar {
+  background-color: var(--bg_color);
+  font-family: Proxima Nova Regular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  /* border: 1px solid #013f78; */
+  border: none;
+  outline: none;
+  transition: 250ms ease-in-out;
+  color: var(--navbar_font_color);
+  border-radius: 5px;
+  margin: 0 1.5vw;
+}
+.btn__container > .btn__navbar__large {
+  margin: 0 1rem;
+}
+.btn__container > .btn__navbar__small {
+  margin: 0 3rem;
+}
+.btn__container > .btn__navbar:hover {
+  transition: 250ms ease-in-out;
+  color: #24bbec;
+}
+.separator {
+  border-right: solid 2px var(--navbar_font_color);
+}
+#activate {
+  color: #ffffff;
+}
+/* Top Navigation Bar */
+.navbar {
+  height: var(--nav-size);
+  background-color: var(--bg);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+}
+
+/* <ul> */
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* <li> */
+.nav-item {
+  width: calc(var(--nav-size) * 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+/* Icon Button */
+.icon-button {
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: 25px;
+  height:25px;
+  /* background-color: var(--bg-icon-btn); */
+  background-color: var(--D4-card-bg-title);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.icon-button svg {
+  fill: #000000;
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+  position: absolute;
+  top: 3rem;
+  width: 200px;
+  transform: translateX(-45%);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: height var(--speed) ease;
+}
+
+.menu {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: background var(--speed);
+  margin: 3px;
+}
+
+.menu-item .icon-button {
+  margin-right: 0.5rem;
+}
+
+.menu-item .icon-button:hover {
+  filter: none;
+}
+
+.menu-item:hover {
+  background-color: #525357;
+  cursor: pointer;
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+/* CSSTransition classes  */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+/* .menu-secondary-exit {
+} */
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+@media only screen and (max-width: 800px) {
+  .btn__container >.btn__navbar{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .btn__container >.btn__navbar{
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .btn__container >.btn__navbar{
+  font-size: 15px;
+  }
+
+}

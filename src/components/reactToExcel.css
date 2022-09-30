@@ -1,0 +1,24 @@
+.excelExportHelper__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .excelExportHelper__container>.toExcel__btn {
+    font-family: Proxima Nova Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: #000000;
+    border: none;
+    outline: none;
+    transition: 250ms ease-in-out;
+    background: var(--D4-card-bg-title);
+    border-radius: 5px;
+    aspect-ratio: 4/1;
+  }
+  .excelExportHelper__container >.toExcel__btn:hover {
+    transform: scale(1.1);
+  }

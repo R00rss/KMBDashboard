@@ -1,0 +1,13 @@
+.ReporteFacturacion__container .tabla__reporte__content {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.ReporteFacturacion__container .tabla__reporte__content >h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  border-radius: 50px;
+  background-color: #24BBEC;
+}

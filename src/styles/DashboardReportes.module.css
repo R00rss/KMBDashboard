@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.container h1 {
+  font-size: 25px;
+  color: rgb(232, 232, 232);
+}
+.container h2 {
+  font-size: 18px;
+  color: rgb(232, 232, 232);
+}
+.cooperativa {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+}
+.select_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 200px;
+  gap: 1rem;
+  justify-content: center;
+}
+.select {
+  width: 300px;
+}
+.graphic {
+  width: 100%;
+  height: 390px;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+}
+.graphic_container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+.porcent_40 {
+  width: 40% !important;
+}
+.porcent_80 {
+  width: 80% !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .graphic_container {
+    width: 80%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .graphic_container {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .section {
+    flex-direction: row;
+  }
+  .graphic_container {
+    width: 45%;
+  }
+}

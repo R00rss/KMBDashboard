@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* gap: 1rem; */
+  padding: 0 1rem;
+  /* align-items: center; */
+}
+.externalPage {
+  width: 95%;
+  height: 469.1px;
+}
+.button_container {
+  display: none;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 1rem 0;
+  background-color: rgb(100, 116, 139);
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.button {
+  background: none;
+  border: none;
+  height: 100%;
+  /* width:23px;
+  word-wrap: break-word;
+  text-align:center;
+  line-height:20px; */
+}
+
+.button > p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.button_container:hover {
+  transform: scale(1.05);
+}

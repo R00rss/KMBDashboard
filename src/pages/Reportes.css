@@ -1,0 +1,32 @@
+.reportes__container {
+  text-align: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #000000;
+}
+.container__btn {
+  margin: 2rem;
+}
+.trTotal {
+  background-color: #292960;
+  color: aliceblue;
+}
+.table > .thead__detalles,
+.table > .thead__detallesContent,
+.table > .thead__global {
+  background-color: #24bbec;
+}
+.table > .tbody__detalles,
+.table > .tbody__detallesContent,
+.table > .tbody__global {
+  background-color: white;
+}
+.btn__detalles__container,
+.btn__detallesContent__container {
+  margin: 2rem 0;
+}
+.btn__detalles__container > .btn__detalles,
+.btn__detallesContent__container > .btn__detallesContent {
+  background-color: #292960;
+  color: aliceblue;
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.submenu {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  background-color: rgb(0, 36, 39);
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}

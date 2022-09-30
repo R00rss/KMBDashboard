@@ -1,0 +1,34 @@
+.selectPrimary__container {
+  position: relative;
+  font-family: Proxima Nova Ligth !important;
+  border: none;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  width: 100%;
+}
+.selectPrimary__container > .selectPrimary__head {
+  font-size: 15px;
+  color: var(--D4-card-title-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 7vh; */
+  height: 25px;
+  background-color: var(--D4-card-bg-title);
+}
+.selectPrimary__body {
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--D4-card-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.scrolleable {
+  overflow: scroll;
+}

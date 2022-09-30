@@ -1,0 +1,127 @@
+:root {
+  --title_selectors_font_size: 1.2vw;
+  --dashboardSelectors-font-color: #000000;
+  --DPage-bg-color: #000000;
+}
+.dashboardPage__container {
+  /* background-color: var(--bg_color); */
+  background-color: var(--DPage-bg-color);
+}
+.dashboard_selectors {
+  margin: 0 0 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--D4-card-bg-color);
+  border: solid 2px #000000;
+  border-top: none;
+  height: 40px;
+  position:sticky;
+  top:54px;
+  z-index: 3;
+}
+.dashboard_selectors > label {
+  margin: 0 0 0 4vw;
+  color: #ffffff;
+  font-family: Proxima Nova Ligth;
+  font-size: 15px;
+}
+.dashboard_selectors > .dashboarpage__btn {
+  font-family: Proxima Nova Ligth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background-color: var(--D4-card-bg-color);
+  transition: 250ms ease-in-out;
+  color: #555555;
+  height: 75%;
+  padding: 0 2vw 0 2vw;
+}
+.dashboard_selectors > .dashboarpage__btn1 {
+  margin-left: 1rem;
+  border-right: solid 4px var(--D4-card-bg-color);
+}
+.dashboard_selectors > .dashboarpage__btn2 {
+  border-right: solid 4px var(--D4-card-bg-color);
+}
+.dashboard_selectors > .dashboarpage__btn:hover {
+  color: var(--D4-card-bg-title);
+  transition: 250ms ease-in-out;
+}
+
+.dashboardPage__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #292960;
+}
+.selects__container {
+  display: grid;
+  gap: 2rem;
+  margin: 1rem;
+}
+.dashboard__container {
+  font-family: Proxima Nova Ligth;
+}
+.dashboarpage__calcular__btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboarpage__calcular__btn__container .dashboarpage__calcular__btn {
+  font-size: 16px;
+  border: none;
+  background-color: var(--D4-card-bg-title);
+  border-radius: 5px;
+  aspect-ratio: 6/1;
+  transition: all 200ms ease-in-out;
+  color: #000000;
+  font-family: Proxima Nova Ligth;
+}
+.dashboarpage__calcular__btn__container .dashboarpage__calcular__btn:hover {
+  transform: scale(1.1);
+}
+.path__container {
+  width: 100%;
+  margin: 3vh 0 0vh 2vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.btn__atras {
+  font-size: 1.2vw;
+  font-family: Proxima Nova Ligth;
+  color: #000000;
+  border: none;
+  background-color: var(--D4-card-bg-title);
+  border-radius: 5px;
+  width: 10vw;
+  aspect-ratio: 4/1;
+}
+@media only screen and (max-width: 600px) {
+  .selects__container {
+    font-size: calc(var(--title_selectors_font_size)*0.5);
+    margin: 1rem 5rem;
+    gap: 1rem;
+    padding: 0 10vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .selects__container {
+    font-size: calc(var(--title_selectors_font_size));
+    grid-template-columns: 4fr 5fr 4fr;
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .selects__container {
+    padding: 0 16vw;
+  }
+
+}

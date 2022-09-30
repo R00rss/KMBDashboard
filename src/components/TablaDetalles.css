@@ -1,0 +1,44 @@
+.tabla__detalles__container {
+  width: 90%;
+  height: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* rgb(203 201 201 / 83% */
+.tabla__detalles__container > .table_scroll {
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: var(--D4-card-bg-title) var(--D4-card-bg-color);
+}
+.tabla__detalles__container > .table_scroll::-webkit-scrollbar{
+  background-color: var(--D4-card-bg-color);
+  height: 9px;
+}
+.tabla__detalles__container > .table_scroll::-webkit-scrollbar-thumb{
+  background-color: var(--D4-card-bg-title);
+}
+.btn__toExcel__container {
+  padding: 2rem 0;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1260px) {
+  .tabla__detalles__container {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1259px) {
+  .tabla__detalles__container {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tabla__detalles__container {
+    font-size: 6px;
+  }
+}

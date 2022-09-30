@@ -1,0 +1,39 @@
+.main__container {
+  min-height: 40vh;
+  background-color: #000000;
+}
+.select__prediccion__container,
+.calendar__prediccion__container,
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select__prediccion__container {
+  flex-direction: column;
+}
+.dashboard__prediccion__container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+#dashboard__prediccion__container__on {
+  border: none;
+  border-radius: 5px;
+}
+.dashboard__prediccion__container > .dashboard__container {
+  background-color: var(--D4-card-bg-color);
+  border: none;
+  border-radius: 5px;
+}
+.calendar__prediccion__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Proxima Nova Ligth;
+}
+.loading__label {
+  text-align: center;
+}
